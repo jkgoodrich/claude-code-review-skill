@@ -1,0 +1,8 @@
+{
+  "name": "review",
+  "description": "Code review under multiple models (Opus, Sonnet, optional agy) with a cross-validation pass.",
+  "author": { "name": "Ben Weisburd" },
+  "license": "MIT",
+  "repository": "https://github.com/bw2/claude-code-review-skill",
+  "keywords": ["code-review", "skill"]
+}

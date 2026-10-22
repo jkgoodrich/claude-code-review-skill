@@ -1,0 +1,14 @@
+{
+  "name": "claude-code-review-skill",
+  "owner": {
+    "name": "Ben Weisburd"
+  },
+  "description": "Ben Weisburd's multi-model /review skill for Claude Code.",
+  "plugins": [
+    {
+      "name": "review",
+      "source": "./",
+      "description": "Code review under multiple models (Opus, Sonnet, optional agy) with a cross-validation pass."
+    }
+  ]
+}

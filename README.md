@@ -11,6 +11,29 @@ agy is optional: the skill drops it automatically if the `agy` CLI isn't install
 
 ## Install
 
+### As a plugin (recommended)
+
+Installing as a plugin lets Claude Code pull updates automatically:
+
+```
+/plugin install review --marketplace bw2/claude-code-review-skill
+```
+
+A project can also enable it for every contributor by adding this to its `.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "claude-code-review-skill": {
+      "source": { "source": "github", "repo": "bw2/claude-code-review-skill" }
+    }
+  },
+  "enabledPlugins": { "review@claude-code-review-skill": true }
+}
+```
+
+### As a personal skill
+
 Clone this repo directly into your personal skills directory:
 
 ```bash
